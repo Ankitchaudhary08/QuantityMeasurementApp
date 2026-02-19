@@ -1,4 +1,4 @@
-package FeetEqualityUc1;
+package UtilityClasses;
 
 import java.util.Scanner;
 
