@@ -5,6 +5,8 @@ import UtilityClasses.InchesEquality;
 
 import java.util.Scanner;
 
+
+
 public class FeetMain {
 
     public static void main(String[] args) {
