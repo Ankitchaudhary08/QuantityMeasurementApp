@@ -1,32 +1,31 @@
-package UtilityClasses;
 
+
+/**
+ * Represents supported length units.
+ * Each unit stores a conversion factor relative to FEET (base unit).
+ */
 public enum LengthUnit {
 
-    FEET {
-        public double toFeet(double value) {
-            return value;
-        }
-    },
+    FEET(1.0),
+    INCH(1.0 / 12.0),
+    YARDS(3.0),
+    CENTIMETERS(0.393701 / 12.0);
 
-    INCH {
-        public double toFeet(double value) {
-            return value / 12.0;
-        }
-    },
+    private final double conversionFactorToFeet;
 
-    YARDS {
-        public double toFeet(double value) {
-            return value * 3.0; // 1 yard = 3 feet
-        }
-    },
+    LengthUnit(double conversionFactorToFeet) {
+        this.conversionFactorToFeet = conversionFactorToFeet;
+    }
 
-    CENTIMETERS {
-        public double toFeet(double value) {
-            return (value * 0.393701) / 12.0;
-            // 1 cm = 0.393701 inches
-            // inches to feet divide by 12
-        }
-    };
+    public double toFeet(double value) {
+        return value * conversionFactorToFeet;
+    }
 
-    public abstract double toFeet(double value);
+    public double fromFeet(double feetValue) {
+        return feetValue / conversionFactorToFeet;
+    }
+
+    public double getConversionFactor() {
+        return conversionFactorToFeet;
+    }
 }
