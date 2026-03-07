@@ -66,7 +66,6 @@ public class QuantityMeasurementApp {
                 LengthUnit.CENTIMETERS,
                 LengthUnit.INCH);
 
-
         QuantityLength q1 =
                 new QuantityLength(1.0, LengthUnit.FEET);
 
