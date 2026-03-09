@@ -51,6 +51,38 @@ public class QuantityMeasurementApp {
                 " in " + target +
                 " -> Result: " + result);
     }
+    public static void demonstrateWeightEquality(
+            QuantityWeight w1,
+            QuantityWeight w2) {
+
+        System.out.println("Compare " + w1 +
+                " and " + w2 +
+                " -> Equal: " + w1.equals(w2));
+    }
+
+    public static void demonstrateWeightConversion(
+            QuantityWeight weight,
+            WeightUnit target) {
+
+        QuantityWeight converted = weight.convertTo(target);
+
+        System.out.println("Convert " + weight +
+                " to " + target +
+                " -> " + converted);
+    }
+
+    public static void demonstrateWeightAddition(
+            QuantityWeight w1,
+            QuantityWeight w2,
+            WeightUnit target) {
+
+        QuantityWeight result = w1.add(w2, target);
+
+        System.out.println("Add " + w1 +
+                " and " + w2 +
+                " in " + target +
+                " -> " + result);
+    }
 
     public static void main(String[] args) {
 
@@ -89,5 +121,24 @@ public class QuantityMeasurementApp {
                 new QuantityLength(12.0, LengthUnit.INCH),
                 LengthUnit.YARDS
         );
+
+        demonstrateWeightEquality(
+                new QuantityWeight(1.0, WeightUnit.KILOGRAM),
+                new QuantityWeight(1000.0, WeightUnit.GRAM)
+        );
+
+
+        demonstrateWeightConversion(
+                new QuantityWeight(2.0, WeightUnit.POUND),
+                WeightUnit.KILOGRAM
+        );
+
+
+        demonstrateWeightAddition(
+                new QuantityWeight(1.0, WeightUnit.KILOGRAM),
+                new QuantityWeight(1000.0, WeightUnit.GRAM),
+                WeightUnit.GRAM
+        );
     }
+
 }

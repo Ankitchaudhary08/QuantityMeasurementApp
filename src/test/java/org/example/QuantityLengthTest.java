@@ -1,9 +1,9 @@
 package org.example;
 
+import org.junit.jupiter.api.Test;
+
 import UtilityClasses.LengthUnit;
 import UtilityClasses.QuantityLength;
-
-import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 

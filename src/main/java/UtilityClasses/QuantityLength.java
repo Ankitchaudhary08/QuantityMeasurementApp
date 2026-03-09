@@ -56,7 +56,6 @@ public final class QuantityLength {
     }
 
 
-
     @Override
     public boolean equals(Object obj) {
 
@@ -76,7 +75,6 @@ public final class QuantityLength {
     public int hashCode() {
         return Objects.hash(toBaseUnit());
     }
-
 
 
     private static double addInBaseUnit(
