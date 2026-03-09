@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b434ab40-3c3d-4658-9c28-ffa68244e766" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/QuantityLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/QuantityLength.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/QuantityMeasurementTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/LengthUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/QuantityLength.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/QuantityWeight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/WeightUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/WeightUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/QuantityLengthTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/QuantityWeightTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
     "Application.QuantityMeasurementTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/UC9-WeightMeasurement",
+    "git-widget-placeholder": "feature/UC10-GenericConversion",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/QuantityMeasurementApp/pom.xml",
     "project.structure.last.edited": "Project",
