@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b434ab40-3c3d-4658-9c28-ffa68244e766" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/QuantityMeasurementTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/LengthUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/LengthUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/QuantityLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/QuantityLength.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/QuantityLengthTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/UC8-StandaloneUnit" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -46,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "feature/UC7-TargetUnitAddition",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/QuantityMeasurementApp/pom.xml",
+    "last_opened_file_path": "C:/journalApp",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
