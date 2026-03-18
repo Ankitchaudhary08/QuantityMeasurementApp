@@ -1,3 +1,4 @@
+
 package UtilityClasses;
 
 public enum VolumeUnit implements IMeasurable {
@@ -13,7 +14,8 @@ public enum VolumeUnit implements IMeasurable {
     }
 
     @Override
-    public double getConversionFactor() { return conversionFactorToLitre;
+    public double getConversionFactor() {
+        return conversionFactorToLitre;
     }
 
     @Override
@@ -27,5 +29,12 @@ public enum VolumeUnit implements IMeasurable {
     }
 
     @Override
-    public String getUnitName() { return this.name();}
+    public String getUnitName() {
+        return this.name();
+    }
+
+    @Override
+    public String getMeasurementType() {
+        return "VOLUME";
+    }
 }

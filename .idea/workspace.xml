@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b434ab40-3c3d-4658-9c28-ffa68244e766" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/IMeasurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/IMeasurable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/LengthUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/LengthUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/Quantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/Quantity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +49,7 @@
     &quot;Application.QuantityMeasurementTest.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/UC14-Temprature-E-Measurement&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/UC15-N-Tier-Architecture-Refactoring&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/QuantityMeasurementApp/pom.xml&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
