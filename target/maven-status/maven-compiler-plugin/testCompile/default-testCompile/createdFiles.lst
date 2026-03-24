@@ -1,0 +1,5 @@
+com\app\quantitymeasurement\repository\QuantityMeasurementDatabaseRepositoryTest.class
+com\app\quantitymeasurement\service\QuantityMeasurementServiceTest.class
+com\app\quantitymeasurement\integrationTests\QuantityMeasurementIntegrationTest.class
+com\app\quantitymeasurement\controller\QuantityMeasurementControllerTest.class
+com\app\quantitymeasurement\unit\QuantityTest.class

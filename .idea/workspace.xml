@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b434ab40-3c3d-4658-9c28-ffa68244e766" name="Changes" comment="" />
+    <list default="true" id="b434ab40-3c3d-4658-9c28-ffa68244e766" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/IMeasurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unit/IMeasurable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/LengthUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unit/LengthUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/Quantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unit/Quantity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/VolumeUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unit/VolumeUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/WeightUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unit/WeightUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +30,13 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/UC7-TargetUnitAddition" />
+        <entry key="$PROJECT_DIR$" value="feature/UC15-N-Tier-Architecture-Refactoring" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/ms-21.0.10/lib/src.zip!/java.base/java/lang/Object.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,21 +49,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.QuantityMeasurementApp.executor": "Run",
-    "Application.QuantityMeasurementTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/UC16-Database-Integration",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/QuantityMeasurementApp/pom.xml",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.QuantityMeasurementApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.QuantityMeasurementTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/UC16-Database-Integration&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/QuantityMeasurementApp/pom.xml&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.QuantityMeasurementApp">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
@@ -80,6 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QuantityMeasurementApp" />
+        <item itemvalue="Application.QuantityMeasurementApp" />
         <item itemvalue="Application.QuantityMeasurementApp" />
         <item itemvalue="Application.QuantityMeasurementApp" />
         <item itemvalue="Application.QuantityMeasurementApp" />
