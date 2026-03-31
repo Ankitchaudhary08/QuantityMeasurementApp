@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="15.432" tests="17" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="14.773" tests="17" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -8,8 +8,8 @@
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="catalina.useNaming" value="false"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="org.jboss.logging.provider" value="slf4j"/>
     <property name="os.name" value="Windows 11"/>
@@ -17,8 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\Ankit\AppData\Local\Temp\surefire11102054352323142817\surefirebooter-20260331105832096_3.jar C:\Users\Ankit\AppData\Local\Temp\surefire11102054352323142817 2026-03-31T10-58-31_907-jvmRun1 surefire-20260331105832096_1tmp surefire_0-20260331105832096_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Ankit\AppData\Local\Temp\surefire7541119760054093248\surefirebooter-20260331111300765_3.jar C:\Users\Ankit\AppData\Local\Temp\surefire7541119760054093248 2026-03-31T11-13-00_496-jvmRun1 surefire-20260331111300765_1tmp surefire_0-20260331111300765_2tmp"/>
     <property name="jdk.debug" value="release"/>
+    <property name="test" value="QuantityMeasurementAppApplicationTests"/>
     <property name="surefire.test.class.path" value="C:\QuantityMeasurementApp\target\test-classes;C:\QuantityMeasurementApp\target\classes;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.3\spring-boot-starter-web-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.3\spring-boot-starter-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot\3.2.3\spring-boot-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.3\spring-boot-autoconfigure-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.3\spring-boot-starter-logging-3.2.3.jar;C:\Users\Ankit\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Ankit\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\Ankit\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\Ankit\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Ankit\.m2\repository\org\slf4j\jul-to-slf4j\2.0.12\jul-to-slf4j-2.0.12.jar;C:\Users\Ankit\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Ankit\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.3\spring-boot-starter-json-3.2.3.jar;C:\Users\Ankit\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;C:\Users\Ankit\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;C:\Users\Ankit\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;C:\Users\Ankit\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;C:\Users\Ankit\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;C:\Users\Ankit\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.3\spring-boot-starter-tomcat-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.19\tomcat-embed-core-10.1.19.jar;C:\Users\Ankit\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.19\tomcat-embed-websocket-10.1.19.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-web\6.1.4\spring-web-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-beans\6.1.4\spring-beans-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-webmvc\6.1.4\spring-webmvc-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-context\6.1.4\spring-context-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-expression\6.1.4\spring-expression-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.3\spring-boot-starter-data-jpa-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.3\spring-boot-starter-aop-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.3\spring-boot-starter-jdbc-3.2.3.jar;C:\Users\Ankit\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-jdbc\6.1.4\spring-jdbc-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\Ankit\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Ankit\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Ankit\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Ankit\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Ankit\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Ankit\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\Ankit\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\Ankit\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\Ankit\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\Ankit\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\Ankit\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\Ankit\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Ankit\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Ankit\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\Ankit\.m2\repository\org\springframework\data\spring-data-jpa\3.2.3\spring-data-jpa-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\data\spring-data-commons\3.2.3\spring-data-commons-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-orm\6.1.4\spring-orm-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-tx\6.1.4\spring-tx-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-aspects\6.1.4\spring-aspects-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.3\spring-boot-starter-validation-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.19\tomcat-embed-el-10.1.19.jar;C:\Users\Ankit\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\Ankit\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.2.3\spring-boot-starter-security-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-aop\6.1.4\spring-aop-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\springframework\security\spring-security-config\6.2.2\spring-security-config-6.2.2.jar;C:\Users\Ankit\.m2\repository\org\springframework\security\spring-security-web\6.2.2\spring-security-web-6.2.2.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.2.3\spring-boot-starter-actuator-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.2.3\spring-boot-actuator-autoconfigure-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-actuator\3.2.3\spring-boot-actuator-3.2.3.jar;C:\Users\Ankit\.m2\repository\io\micrometer\micrometer-observation\1.12.3\micrometer-observation-1.12.3.jar;C:\Users\Ankit\.m2\repository\io\micrometer\micrometer-commons\1.12.3\micrometer-commons-1.12.3.jar;C:\Users\Ankit\.m2\repository\io\micrometer\micrometer-jakarta9\1.12.3\micrometer-jakarta9-1.12.3.jar;C:\Users\Ankit\.m2\repository\io\micrometer\micrometer-core\1.12.3\micrometer-core-1.12.3.jar;C:\Users\Ankit\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Ankit\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Ankit\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\Ankit\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Ankit\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.3.0\springdoc-openapi-starter-webmvc-ui-2.3.0.jar;C:\Users\Ankit\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.3.0\springdoc-openapi-starter-webmvc-api-2.3.0.jar;C:\Users\Ankit\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.3.0\springdoc-openapi-starter-common-2.3.0.jar;C:\Users\Ankit\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.19\swagger-core-jakarta-2.2.19.jar;C:\Users\Ankit\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\Ankit\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.19\swagger-annotations-jakarta-2.2.19.jar;C:\Users\Ankit\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.19\swagger-models-jakarta-2.2.19.jar;C:\Users\Ankit\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;C:\Users\Ankit\.m2\repository\org\webjars\swagger-ui\5.10.3\swagger-ui-5.10.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.3\spring-boot-starter-test-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-test\3.2.3\spring-boot-test-3.2.3.jar;C:\Users\Ankit\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.3\spring-boot-test-autoconfigure-3.2.3.jar;C:\Users\Ankit\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Ankit\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\Ankit\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Ankit\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\Ankit\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\Ankit\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Ankit\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Ankit\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\Ankit\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Ankit\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Ankit\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Ankit\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Ankit\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Ankit\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ankit\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Ankit\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Ankit\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Ankit\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\Ankit\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\Ankit\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Ankit\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\Ankit\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Ankit\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-core\6.1.4\spring-core-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-jcl\6.1.4\spring-jcl-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\springframework\spring-test\6.1.4\spring-test-6.1.4.jar;C:\Users\Ankit\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\Ankit\.m2\repository\org\springframework\security\spring-security-test\6.2.2\spring-security-test-6.2.2.jar;C:\Users\Ankit\.m2\repository\org\springframework\security\spring-security-core\6.2.2\spring-security-core-6.2.2.jar;C:\Users\Ankit\.m2\repository\org\springframework\security\spring-security-crypto\6.2.2\spring-security-crypto-6.2.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Ankit"/>
@@ -34,7 +35,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="C:\Users\Ankit\AppData\Local\Temp\surefire11102054352323142817\surefirebooter-20260331105832096_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Ankit\AppData\Local\Temp\surefire7541119760054093248\surefirebooter-20260331111300765_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.8+12-LTS-250"/>
@@ -48,16 +49,16 @@
     <property name="localRepository" value="C:\Users\Ankit\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\Ankit\AppData\Local\Temp\"/>
-    <property name="catalina.home" value="C:\Users\Ankit\AppData\Local\Temp\tomcat.0.8672540412217132241"/>
+    <property name="catalina.home" value="C:\Users\Ankit\AppData\Local\Temp\tomcat.0.5598414945567408914"/>
     <property name="com.zaxxer.hikari.pool_number" value="1"/>
     <property name="java.version" value="21.0.8"/>
     <property name="user.dir" value="C:\QuantityMeasurementApp"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="7280"/>
+    <property name="PID" value="11696"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
-    <property name="catalina.base" value="C:\Users\Ankit\AppData\Local\Temp\tomcat.0.8672540412217132241"/>
+    <property name="catalina.base" value="C:\Users\Ankit\AppData\Local\Temp\tomcat.0.5598414945567408914"/>
     <property name="native.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\PowerShell\7;C:\Windows\System32;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Java\jdk-17\bin;C:\Program Files\HP\HP One Agent;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Ankit\Downloads\apache-maven-3.9.9\bin;c:\Users\Ankit\AppData\Local\Programs\cursor\resources\app\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\PowerShell\7\;C:\Users\Ankit\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\Ankit\AppData\Local\Programs\Python\Python313\;C:\Users\Ankit\AppData\Local\Programs\Python\Launcher\;C:\Users\Ankit\AppData\Local\Microsoft\WindowsApps;C:\Users\Ankit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Windows\System32;C:\Users\Ankit\AppData\Roaming\npm;C:\Users\Ankit\AppData\Local\Programs\Antigravity\bin;C:\Program Files\MySQL\MySQL Server 8.1\bin;C:\Users\Ankit\AppData\Local\Programs\mongosh\;c:\Users\Ankit\.antigravity\extensions\vscjava.vscode-java-debug-0.58.5-universal\bundled\scripts\noConfigScripts;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
@@ -67,9 +68,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testSubtract_2Feet_Minus1Foot_Returns1Foot" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="1.012">
-    <system-out><![CDATA[10:58:38.204 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests]: QuantityMeasurementAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-10:58:38.221 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.app.quantitymeasurement.QuantityMeasurementAppApplication for test class com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests
+  <testcase name="testSubtract_2Feet_Minus1Foot_Returns1Foot" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="2.6">
+    <system-out><![CDATA[11:13:02.423 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests]: QuantityMeasurementAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:13:02.586 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.app.quantitymeasurement.QuantityMeasurementAppApplication for test class com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -79,119 +80,125 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.3)
 
-10:58:38.278 [main] INFO  c.a.q.QuantityMeasurementAppApplicationTests -- Starting QuantityMeasurementAppApplicationTests using Java 21.0.8 with PID 7280 (started by Ankit in C:\QuantityMeasurementApp)
-10:58:38.278 [main] INFO  c.a.q.QuantityMeasurementAppApplicationTests -- No active profile set, falling back to 1 default profile: "default"
-10:58:39.092 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-10:58:39.154 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -- Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
-10:58:40.061 [main] INFO  o.s.b.w.e.t.TomcatWebServer -- Tomcat initialized with port 0 (http)
-10:58:40.086 [main] INFO  o.a.c.h.Http11NioProtocol -- Initializing ProtocolHandler ["http-nio-auto-1"]
-10:58:40.091 [main] INFO  o.a.c.c.StandardService -- Starting service [Tomcat]
-10:58:40.092 [main] INFO  o.a.c.c.StandardEngine -- Starting Servlet engine: [Apache Tomcat/10.1.19]
-10:58:40.249 [main] INFO  o.a.c.c.C.[.[.[/] -- Initializing Spring embedded WebApplicationContext
-10:58:40.250 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -- Root WebApplicationContext: initialization completed in 1971 ms
-10:58:41.193 [main] INFO  c.z.h.HikariDataSource -- HikariPool-1 - Starting...
-10:58:41.887 [main] INFO  c.z.h.p.HikariPool -- HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:8f311e13-1dc6-4e52-b6a2-4cd5010ab633 user=SA
-10:58:41.893 [main] INFO  c.z.h.HikariDataSource -- HikariPool-1 - Start completed.
-10:58:42.046 [main] INFO  o.h.j.i.u.LogHelper -- HHH000204: Processing PersistenceUnitInfo [name: default]
-10:58:42.289 [main] INFO  o.h.Version -- HHH000412: Hibernate ORM core version 6.4.4.Final
-10:58:42.429 [main] INFO  o.h.c.i.RegionFactoryInitiator -- HHH000026: Second-level cache disabled
-10:58:43.017 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -- No LoadTimeWeaver setup: ignoring JPA class transformer
-10:58:45.056 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-10:58:45.146 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -- Initialized JPA EntityManagerFactory for persistence unit 'default'
-10:58:46.112 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactory -- Hibernate is in classpath; If applicable, HQL parser will be used.
-10:58:48.148 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-10:58:48.231 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration -- 
+11:13:02.999 [background-preinit] INFO  o.h.v.i.u.Version -- HV000001: Hibernate Validator 8.0.1.Final
+11:13:03.073 [main] INFO  c.a.q.QuantityMeasurementAppApplicationTests -- Starting QuantityMeasurementAppApplicationTests using Java 21.0.8 with PID 11696 (started by Ankit in C:\QuantityMeasurementApp)
+11:13:03.074 [main] INFO  c.a.q.QuantityMeasurementAppApplicationTests -- No active profile set, falling back to 1 default profile: "default"
+11:13:04.729 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:13:04.816 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -- Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+11:13:06.149 [main] INFO  o.s.b.w.e.t.TomcatWebServer -- Tomcat initialized with port 0 (http)
+11:13:06.168 [main] INFO  o.a.c.h.Http11NioProtocol -- Initializing ProtocolHandler ["http-nio-auto-1"]
+11:13:06.170 [main] INFO  o.a.c.c.StandardService -- Starting service [Tomcat]
+11:13:06.171 [main] INFO  o.a.c.c.StandardEngine -- Starting Servlet engine: [Apache Tomcat/10.1.19]
+11:13:06.284 [main] INFO  o.a.c.c.C.[.[.[/] -- Initializing Spring embedded WebApplicationContext
+11:13:06.286 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -- Root WebApplicationContext: initialization completed in 3170 ms
+11:13:06.753 [main] INFO  c.z.h.HikariDataSource -- HikariPool-1 - Starting...
+11:13:07.075 [main] INFO  c.z.h.p.HikariPool -- HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ed0fa860-09f1-44eb-98d4-855de5e89134 user=SA
+11:13:07.078 [main] INFO  c.z.h.HikariDataSource -- HikariPool-1 - Start completed.
+11:13:07.155 [main] INFO  o.h.j.i.u.LogHelper -- HHH000204: Processing PersistenceUnitInfo [name: default]
+11:13:07.301 [main] INFO  o.h.Version -- HHH000412: Hibernate ORM core version 6.4.4.Final
+11:13:07.357 [main] INFO  o.h.c.i.RegionFactoryInitiator -- HHH000026: Second-level cache disabled
+11:13:07.863 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -- No LoadTimeWeaver setup: ignoring JPA class transformer
+11:13:09.167 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:13:09.219 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:13:09.852 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactory -- Hibernate is in classpath; If applicable, HQL parser will be used.
+11:13:10.755 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:13:10.805 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration -- 
 
-Using generated security password: 2a7d9339-06d9-49ac-9551-1c5444688dac
+Using generated security password: da64a759-7789-41d2-a0b5-56eca4ea7e72
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-10:58:49.011 [main] INFO  o.s.b.a.e.w.EndpointLinksResolver -- Exposing 1 endpoint(s) beneath base path '/actuator'
-10:58:49.139 [main] INFO  o.s.s.w.DefaultSecurityFilterChain -- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@60aee4ca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a3a3b93, org.springframework.security.web.context.SecurityContextHolderFilter@3fbeaa03, org.springframework.security.web.header.HeaderWriterFilter@6c88026b, org.springframework.web.filter.CorsFilter@50f71f48, org.springframework.security.web.authentication.logout.LogoutFilter@5ffdea7c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72f18fbd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1653cc95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14270715, org.springframework.security.web.access.ExceptionTranslationFilter@38f2c6a0, org.springframework.security.web.access.intercept.AuthorizationFilter@1c32c581]
-10:58:51.034 [main] INFO  o.a.c.h.Http11NioProtocol -- Starting ProtocolHandler ["http-nio-auto-1"]
-10:58:51.142 [main] INFO  o.s.b.w.e.t.TomcatWebServer -- Tomcat started on port 62985 (http) with context path ''
-10:58:51.193 [main] INFO  c.a.q.QuantityMeasurementAppApplicationTests -- Started QuantityMeasurementAppApplicationTests in 12.964 seconds (process running for 18.936)
-10:58:52.096 [http-nio-auto-1-exec-1] INFO  o.a.c.c.C.[.[.[/] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
-10:58:52.097 [http-nio-auto-1-exec-1] INFO  o.s.w.s.DispatcherServlet -- Initializing Servlet 'dispatcherServlet'
-10:58:52.099 [http-nio-auto-1-exec-1] INFO  o.s.w.s.DispatcherServlet -- Completed initialization in 2 ms
-10:58:52.193 [http-nio-auto-1-exec-1] INFO  c.a.q.c.QuantityMeasurementController -- POST /subtract called
-10:58:52.309 [http-nio-auto-1-exec-1] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- subtract: QuantityDTO(value=2.0, unit=FEET, measurementType=LengthUnit) - QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) = 1.0
+11:13:11.560 [main] INFO  o.s.b.a.e.w.EndpointLinksResolver -- Exposing 1 endpoint(s) beneath base path '/actuator'
+11:13:11.664 [main] INFO  o.s.s.w.DefaultSecurityFilterChain -- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a29aced, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@113886b1, org.springframework.security.web.context.SecurityContextHolderFilter@4df4f611, org.springframework.security.web.header.HeaderWriterFilter@497746ea, org.springframework.web.filter.CorsFilter@741d2dda, org.springframework.security.web.authentication.logout.LogoutFilter@3ec72844, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6845dfcc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e7e4aea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67387eba, org.springframework.security.web.access.ExceptionTranslationFilter@5b3c2e59, org.springframework.security.web.access.intercept.AuthorizationFilter@120f441c]
+11:13:12.553 [main] INFO  o.a.c.h.Http11NioProtocol -- Starting ProtocolHandler ["http-nio-auto-1"]
+11:13:12.620 [main] INFO  o.s.b.w.e.t.TomcatWebServer -- Tomcat started on port 58440 (http) with context path ''
+11:13:12.651 [main] INFO  c.a.q.QuantityMeasurementAppApplicationTests -- Started QuantityMeasurementAppApplicationTests in 9.891 seconds (process running for 11.6)
+11:13:14.973 [http-nio-auto-1-exec-1] INFO  o.a.c.c.C.[.[.[/] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:13:14.974 [http-nio-auto-1-exec-1] INFO  o.s.w.s.DispatcherServlet -- Initializing Servlet 'dispatcherServlet'
+11:13:14.976 [http-nio-auto-1-exec-1] INFO  o.s.w.s.DispatcherServlet -- Completed initialization in 2 ms
+11:13:15.202 [http-nio-auto-1-exec-1] INFO  c.a.q.c.QuantityMeasurementController -- POST /subtract called
+11:13:15.301 [http-nio-auto-1-exec-1] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- subtract: QuantityDTO(value=2.0, unit=FEET, measurementType=LengthUnit) - QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) = 1.0
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\Ankit\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="testGetErrorHistory_AfterErrorOperation_ReturnsError" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.17">
+    <system-out><![CDATA[11:13:15.593 [http-nio-auto-1-exec-2] INFO  c.a.q.c.QuantityMeasurementController -- POST /add called
+11:13:15.594 [http-nio-auto-1-exec-2] ERROR c.a.q.s.QuantityMeasurementServiceImpl -- Add failed: add Error: Cannot perform arithmetic between different measurement categories: LengthUnit and WeightUnit
+11:13:15.629 [http-nio-auto-1-exec-4] INFO  c.a.q.c.QuantityMeasurementController -- GET /history/errored
 ]]></system-out>
   </testcase>
-  <testcase name="testGetErrorHistory_AfterErrorOperation_ReturnsError" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.251">
-    <system-out><![CDATA[10:58:52.658 [http-nio-auto-1-exec-3] INFO  c.a.q.c.QuantityMeasurementController -- POST /add called
-10:58:52.659 [http-nio-auto-1-exec-3] ERROR c.a.q.s.QuantityMeasurementServiceImpl -- Add failed: add Error: Cannot perform arithmetic between different measurement categories: LengthUnit and WeightUnit
-10:58:52.695 [http-nio-auto-1-exec-2] INFO  c.a.q.c.QuantityMeasurementController -- GET /history/errored
+  <testcase name="testCompare_NotEqualQuantities_ReturnsFalse" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.066">
+    <system-out><![CDATA[11:13:15.736 [http-nio-auto-1-exec-3] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
+11:13:15.742 [http-nio-auto-1-exec-3] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- compare: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) == QuantityDTO(value=10.0, unit=INCH, measurementType=LengthUnit) -> false
 ]]></system-out>
   </testcase>
-  <testcase name="testCompare_NotEqualQuantities_ReturnsFalse" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.057">
-    <system-out><![CDATA[10:58:52.812 [http-nio-auto-1-exec-4] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
-10:58:52.819 [http-nio-auto-1-exec-4] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- compare: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) == QuantityDTO(value=10.0, unit=INCH, measurementType=LengthUnit) -> false
+  <testcase name="testCompare_EqualQuantities_ReturnsTrue" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.104">
+    <system-out><![CDATA[11:13:15.797 [http-nio-auto-1-exec-5] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
+11:13:15.801 [http-nio-auto-1-exec-5] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- compare: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) == QuantityDTO(value=12.0, unit=INCH, measurementType=LengthUnit) -> true
 ]]></system-out>
   </testcase>
-  <testcase name="testCompare_EqualQuantities_ReturnsTrue" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.106">
-    <system-out><![CDATA[10:58:52.872 [http-nio-auto-1-exec-6] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
-10:58:52.876 [http-nio-auto-1-exec-6] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- compare: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) == QuantityDTO(value=12.0, unit=INCH, measurementType=LengthUnit) -> true
+  <testcase name="testGetHistoryByOperation_AfterCompare_ReturnsRecord" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.067">
+    <system-out><![CDATA[11:13:15.888 [http-nio-auto-1-exec-6] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
+11:13:15.891 [http-nio-auto-1-exec-6] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- compare: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) == QuantityDTO(value=12.0, unit=INCH, measurementType=LengthUnit) -> true
+11:13:15.907 [http-nio-auto-1-exec-7] INFO  c.a.q.c.QuantityMeasurementController -- GET /history/operation/compare
 ]]></system-out>
   </testcase>
-  <testcase name="testGetHistoryByOperation_AfterCompare_ReturnsRecord" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.096">
-    <system-out><![CDATA[10:58:52.983 [http-nio-auto-1-exec-5] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
-10:58:52.989 [http-nio-auto-1-exec-5] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- compare: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) == QuantityDTO(value=12.0, unit=INCH, measurementType=LengthUnit) -> true
-10:58:53.006 [http-nio-auto-1-exec-7] INFO  c.a.q.c.QuantityMeasurementController -- GET /history/operation/compare
+  <testcase name="testCompare_DifferentTypes_Returns400" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.055">
+    <system-out><![CDATA[11:13:15.982 [http-nio-auto-1-exec-8] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
+11:13:15.983 [http-nio-auto-1-exec-8] ERROR c.a.q.s.QuantityMeasurementServiceImpl -- Compare failed: compare Error: Cannot compare different measurement categories: LengthUnit and WeightUnit
 ]]></system-out>
   </testcase>
-  <testcase name="testCompare_DifferentTypes_Returns400" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.036">
-    <system-out><![CDATA[10:58:53.074 [http-nio-auto-1-exec-8] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
-10:58:53.075 [http-nio-auto-1-exec-8] ERROR c.a.q.s.QuantityMeasurementServiceImpl -- Compare failed: compare Error: Cannot compare different measurement categories: LengthUnit and WeightUnit
+  <testcase name="testDivide_2Feet_By1Foot_Returns2" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.049">
+    <system-out><![CDATA[11:13:16.033 [http-nio-auto-1-exec-9] INFO  c.a.q.c.QuantityMeasurementController -- POST /divide called
+11:13:16.037 [http-nio-auto-1-exec-9] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- divide: QuantityDTO(value=2.0, unit=FEET, measurementType=LengthUnit) / QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) = 2.0
 ]]></system-out>
   </testcase>
-  <testcase name="testDivide_2Feet_By1Foot_Returns2" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.035">
-    <system-out><![CDATA[10:58:53.106 [http-nio-auto-1-exec-9] INFO  c.a.q.c.QuantityMeasurementController -- POST /divide called
-10:58:53.111 [http-nio-auto-1-exec-9] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- divide: QuantityDTO(value=2.0, unit=FEET, measurementType=LengthUnit) / QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) = 2.0
+  <testcase name="testConvert_KilogramToGram_Returns1000" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.048">
+    <system-out><![CDATA[11:13:16.082 [http-nio-auto-1-exec-10] INFO  c.a.q.c.QuantityMeasurementController -- POST /convert called
+11:13:16.089 [http-nio-auto-1-exec-10] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- convert: QuantityDTO(value=1.0, unit=KILOGRAM, measurementType=WeightUnit) -> GRAM = 1000.0
 ]]></system-out>
   </testcase>
-  <testcase name="testConvert_KilogramToGram_Returns1000" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.039">
-    <system-out><![CDATA[10:58:53.152 [http-nio-auto-1-exec-10] INFO  c.a.q.c.QuantityMeasurementController -- POST /convert called
-10:58:53.156 [http-nio-auto-1-exec-10] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- convert: QuantityDTO(value=1.0, unit=KILOGRAM, measurementType=WeightUnit) -> GRAM = 1000.0
+  <testcase name="testAdd_DifferentTypes_Returns400" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.064">
+    <system-out><![CDATA[11:13:16.142 [http-nio-auto-1-exec-1] INFO  c.a.q.c.QuantityMeasurementController -- POST /add called
+11:13:16.142 [http-nio-auto-1-exec-1] ERROR c.a.q.s.QuantityMeasurementServiceImpl -- Add failed: add Error: Cannot perform arithmetic between different measurement categories: LengthUnit and WeightUnit
 ]]></system-out>
   </testcase>
-  <testcase name="testAdd_DifferentTypes_Returns400" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.049">
-    <system-out><![CDATA[10:58:53.199 [http-nio-auto-1-exec-1] INFO  c.a.q.c.QuantityMeasurementController -- POST /add called
-10:58:53.199 [http-nio-auto-1-exec-1] ERROR c.a.q.s.QuantityMeasurementServiceImpl -- Add failed: add Error: Cannot perform arithmetic between different measurement categories: LengthUnit and WeightUnit
+  <testcase name="testGetHistoryByType_LengthUnit_ReturnsAllLengthRecords" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.123">
+    <system-out><![CDATA[11:13:16.204 [http-nio-auto-1-exec-2] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
+11:13:16.209 [http-nio-auto-1-exec-2] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- compare: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) == QuantityDTO(value=12.0, unit=INCH, measurementType=LengthUnit) -> true
+11:13:16.237 [http-nio-auto-1-exec-4] INFO  c.a.q.c.QuantityMeasurementController -- POST /add called
+11:13:16.242 [http-nio-auto-1-exec-4] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- add: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) + QuantityDTO(value=12.0, unit=INCH, measurementType=LengthUnit) = 2.0
+11:13:16.259 [http-nio-auto-1-exec-3] INFO  c.a.q.c.QuantityMeasurementController -- GET /history/type/LengthUnit
 ]]></system-out>
   </testcase>
-  <testcase name="testGetHistoryByType_LengthUnit_ReturnsAllLengthRecords" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.071">
-    <system-out><![CDATA[10:58:53.239 [http-nio-auto-1-exec-3] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
-10:58:53.242 [http-nio-auto-1-exec-3] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- compare: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) == QuantityDTO(value=12.0, unit=INCH, measurementType=LengthUnit) -> true
-10:58:53.259 [http-nio-auto-1-exec-2] INFO  c.a.q.c.QuantityMeasurementController -- POST /add called
-10:58:53.263 [http-nio-auto-1-exec-2] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- add: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) + QuantityDTO(value=12.0, unit=INCH, measurementType=LengthUnit) = 2.0
-10:58:53.275 [http-nio-auto-1-exec-4] INFO  c.a.q.c.QuantityMeasurementController -- GET /history/type/LengthUnit
+  <testcase name="testActuatorHealth_ReturnsUp" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.143"/>
+  <testcase name="testConvert_FeetToInches_Returns12" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.061">
+    <system-out><![CDATA[11:13:16.484 [http-nio-auto-1-exec-6] INFO  c.a.q.c.QuantityMeasurementController -- POST /convert called
+11:13:16.490 [http-nio-auto-1-exec-6] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- convert: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) -> INCH = 12.0
 ]]></system-out>
   </testcase>
-  <testcase name="testActuatorHealth_ReturnsUp" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.065"/>
-  <testcase name="testConvert_FeetToInches_Returns12" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.038">
-    <system-out><![CDATA[10:58:53.385 [http-nio-auto-1-exec-5] INFO  c.a.q.c.QuantityMeasurementController -- POST /convert called
-10:58:53.388 [http-nio-auto-1-exec-5] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- convert: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) -> INCH = 12.0
+  <testcase name="testAdd_FeetAndInches_Returns2Feet" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.045">
+    <system-out><![CDATA[11:13:16.531 [http-nio-auto-1-exec-7] INFO  c.a.q.c.QuantityMeasurementController -- POST /add called
+11:13:16.535 [http-nio-auto-1-exec-7] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- add: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) + QuantityDTO(value=12.0, unit=INCH, measurementType=LengthUnit) = 2.0
 ]]></system-out>
   </testcase>
-  <testcase name="testAdd_FeetAndInches_Returns2Feet" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.028">
-    <system-out><![CDATA[10:58:53.415 [http-nio-auto-1-exec-7] INFO  c.a.q.c.QuantityMeasurementController -- POST /add called
-10:58:53.419 [http-nio-auto-1-exec-7] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- add: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) + QuantityDTO(value=12.0, unit=INCH, measurementType=LengthUnit) = 2.0
+  <testcase name="contextLoads" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.022"/>
+  <testcase name="testDivide_ByZero_Returns400" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.049">
+    <system-out><![CDATA[11:13:16.609 [http-nio-auto-1-exec-8] INFO  c.a.q.c.QuantityMeasurementController -- POST /divide called
+11:13:16.610 [http-nio-auto-1-exec-8] ERROR c.a.q.s.QuantityMeasurementServiceImpl -- Divide unexpected error: Division by zero
 ]]></system-out>
   </testcase>
-  <testcase name="contextLoads" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.011"/>
-  <testcase name="testDivide_ByZero_Returns400" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.036">
-    <system-out><![CDATA[10:58:53.463 [http-nio-auto-1-exec-8] INFO  c.a.q.c.QuantityMeasurementController -- POST /divide called
-10:58:53.464 [http-nio-auto-1-exec-8] ERROR c.a.q.s.QuantityMeasurementServiceImpl -- Divide unexpected error: Division by zero
-]]></system-out>
-  </testcase>
-  <testcase name="testSwaggerUI_Loads" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.051"/>
-  <testcase name="testGetOperationCount_AfterMultipleCompares" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.098">
-    <system-out><![CDATA[10:58:53.558 [http-nio-auto-1-exec-10] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
-10:58:53.562 [http-nio-auto-1-exec-10] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- compare: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) == QuantityDTO(value=12.0, unit=INCH, measurementType=LengthUnit) -> true
-10:58:53.589 [http-nio-auto-1-exec-1] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
-10:58:53.593 [http-nio-auto-1-exec-1] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- compare: QuantityDTO(value=2.0, unit=FEET, measurementType=LengthUnit) == QuantityDTO(value=24.0, unit=INCH, measurementType=LengthUnit) -> true
-10:58:53.604 [http-nio-auto-1-exec-3] INFO  c.a.q.c.QuantityMeasurementController -- GET /count/compare
+  <testcase name="testSwaggerUI_Loads" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.078"/>
+  <testcase name="testGetOperationCount_AfterMultipleCompares" classname="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" time="0.109">
+    <system-out><![CDATA[11:13:16.732 [http-nio-auto-1-exec-10] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
+11:13:16.737 [http-nio-auto-1-exec-10] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- compare: QuantityDTO(value=1.0, unit=FEET, measurementType=LengthUnit) == QuantityDTO(value=12.0, unit=INCH, measurementType=LengthUnit) -> true
+11:13:16.764 [http-nio-auto-1-exec-1] INFO  c.a.q.c.QuantityMeasurementController -- POST /compare called
+11:13:16.767 [http-nio-auto-1-exec-1] INFO  c.a.q.s.QuantityMeasurementServiceImpl -- compare: QuantityDTO(value=2.0, unit=FEET, measurementType=LengthUnit) == QuantityDTO(value=24.0, unit=INCH, measurementType=LengthUnit) -> true
+11:13:16.782 [http-nio-auto-1-exec-2] INFO  c.a.q.c.QuantityMeasurementController -- GET /count/compare
 ]]></system-out>
   </testcase>
 </testsuite>

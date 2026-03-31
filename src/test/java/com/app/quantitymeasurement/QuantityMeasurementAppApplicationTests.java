@@ -4,7 +4,6 @@ import com.app.quantitymeasurement.controller.QuantityInputDTO;
 import com.app.quantitymeasurement.model.QuantityDTO;
 import com.app.quantitymeasurement.model.QuantityMeasurementDTO;
 import com.app.quantitymeasurement.repository.QuantityMeasurementRepository;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,8 +33,6 @@ class QuantityMeasurementAppApplicationTests {
     @Autowired
     private QuantityMeasurementRepository repository;
 
-    @Autowired
-    private ObjectMapper objectMapper;
 
     private String baseUrl;
 
@@ -81,9 +78,9 @@ class QuantityMeasurementAppApplicationTests {
         ResponseEntity<QuantityMeasurementDTO> response = post("/compare", input);
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody()).isNotNull();
-        assertThat(response.getBody().getResultString()).isEqualTo("true");
-        assertThat(response.getBody().isError()).isFalse();
+        QuantityMeasurementDTO body = java.util.Objects.requireNonNull(response.getBody());
+        assertThat(body.getResultString()).isEqualTo("true");
+        assertThat(body.isError()).isFalse();
         assertThat(repository.count()).isEqualTo(1);
     }
 
@@ -93,7 +90,7 @@ class QuantityMeasurementAppApplicationTests {
         ResponseEntity<QuantityMeasurementDTO> response = post("/compare", input);
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody().getResultString()).isEqualTo("false");
+        assertThat(java.util.Objects.requireNonNull(response.getBody()).getResultString()).isEqualTo("false");
     }
 
     @Test
@@ -117,8 +114,9 @@ class QuantityMeasurementAppApplicationTests {
         ResponseEntity<QuantityMeasurementDTO> response = post("/convert", input);
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody().getResultValue()).isEqualTo(12.0);
-        assertThat(response.getBody().isError()).isFalse();
+        QuantityMeasurementDTO body = java.util.Objects.requireNonNull(response.getBody());
+        assertThat(body.getResultValue()).isEqualTo(12.0);
+        assertThat(body.isError()).isFalse();
     }
 
     @Test
@@ -127,7 +125,7 @@ class QuantityMeasurementAppApplicationTests {
         ResponseEntity<QuantityMeasurementDTO> response = post("/convert", input);
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody().getResultValue()).isEqualTo(1000.0);
+        assertThat(java.util.Objects.requireNonNull(response.getBody()).getResultValue()).isEqualTo(1000.0);
     }
 
     // ----------------------------------------------------------------
@@ -140,8 +138,9 @@ class QuantityMeasurementAppApplicationTests {
         ResponseEntity<QuantityMeasurementDTO> response = post("/add", input);
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody().getResultValue()).isEqualTo(2.0);
-        assertThat(response.getBody().getResultUnit()).isEqualTo("FEET");
+        QuantityMeasurementDTO body = java.util.Objects.requireNonNull(response.getBody());
+        assertThat(body.getResultValue()).isEqualTo(2.0);
+        assertThat(body.getResultUnit()).isEqualTo("FEET");
     }
 
     @Test
@@ -166,7 +165,7 @@ class QuantityMeasurementAppApplicationTests {
         ResponseEntity<QuantityMeasurementDTO> response = post("/subtract", input);
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody().getResultValue()).isEqualTo(1.0);
+        assertThat(java.util.Objects.requireNonNull(response.getBody()).getResultValue()).isEqualTo(1.0);
     }
 
     // ----------------------------------------------------------------
@@ -179,7 +178,7 @@ class QuantityMeasurementAppApplicationTests {
         ResponseEntity<QuantityMeasurementDTO> response = post("/divide", input);
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody().getResultValue()).isEqualTo(2.0);
+        assertThat(java.util.Objects.requireNonNull(response.getBody()).getResultValue()).isEqualTo(2.0);
     }
 
     @Test
@@ -208,8 +207,9 @@ class QuantityMeasurementAppApplicationTests {
                 new ParameterizedTypeReference<>() {});
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody()).hasSize(1);
-        assertThat(response.getBody().get(0).getOperation()).isEqualTo("compare");
+        List<QuantityMeasurementDTO> body = java.util.Objects.requireNonNull(response.getBody());
+        assertThat(body).hasSize(1);
+        assertThat(body.get(0).getOperation()).isEqualTo("compare");
     }
 
     @Test
@@ -253,8 +253,9 @@ class QuantityMeasurementAppApplicationTests {
                 new ParameterizedTypeReference<>() {});
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody()).isNotEmpty();
-        assertThat(response.getBody().get(0).isError()).isTrue();
+        List<QuantityMeasurementDTO> body = java.util.Objects.requireNonNull(response.getBody());
+        assertThat(body).isNotEmpty();
+        assertThat(body.get(0).isError()).isTrue();
     }
 
     // ----------------------------------------------------------------

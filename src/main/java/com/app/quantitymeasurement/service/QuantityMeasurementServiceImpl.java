@@ -99,15 +99,14 @@ public class QuantityMeasurementServiceImpl implements IQuantityMeasurementServi
     // ----------------------------------------------------------------
 
     @Override
-    @SuppressWarnings("unchecked")
     public QuantityMeasurementDTO compare(QuantityDTO q1, QuantityDTO q2) {
         try {
             if (!q1.getMeasurementType().equals(q2.getMeasurementType()))
                 throw new QuantityMeasurementException("compare Error: Cannot compare different measurement categories: "
                         + q1.getMeasurementType() + " and " + q2.getMeasurementType());
 
-            Quantity qty1 = toQuantity(q1);
-            Quantity qty2 = toQuantity(q2);
+            Quantity<IMeasurable> qty1 = toQuantity(q1);
+            Quantity<IMeasurable> qty2 = toQuantity(q2);
             boolean result = qty1.equals(qty2);
 
             QuantityMeasurementEntity entity = buildEntity(q1, q2, "compare");
@@ -129,12 +128,11 @@ public class QuantityMeasurementServiceImpl implements IQuantityMeasurementServi
     }
 
     @Override
-    @SuppressWarnings("unchecked")
     public QuantityMeasurementDTO convert(QuantityDTO source, QuantityDTO targetUnitDto) {
         try {
-            Quantity qty = toQuantity(source);
+            Quantity<IMeasurable> qty = toQuantity(source);
             IMeasurable targetUnit = resolveUnit(targetUnitDto);
-            Quantity converted = qty.convertTo(targetUnit);
+            Quantity<IMeasurable> converted = qty.convertTo(targetUnit);
 
             QuantityMeasurementEntity entity = buildEntity(source, targetUnitDto, "convert");
             entity.setResultValue(converted.getValue());
@@ -157,16 +155,15 @@ public class QuantityMeasurementServiceImpl implements IQuantityMeasurementServi
     }
 
     @Override
-    @SuppressWarnings("unchecked")
     public QuantityMeasurementDTO add(QuantityDTO q1, QuantityDTO q2) {
         try {
             if (!q1.getMeasurementType().equals(q2.getMeasurementType()))
                 throw new QuantityMeasurementException("add Error: Cannot perform arithmetic between different measurement categories: "
                         + q1.getMeasurementType() + " and " + q2.getMeasurementType());
 
-            Quantity qty1 = toQuantity(q1);
-            Quantity qty2 = toQuantity(q2);
-            Quantity result = qty1.add(qty2);
+            Quantity<IMeasurable> qty1 = toQuantity(q1);
+            Quantity<IMeasurable> qty2 = toQuantity(q2);
+            Quantity<IMeasurable> result = qty1.add(qty2);
 
             QuantityMeasurementEntity entity = buildEntity(q1, q2, "add");
             entity.setResultValue(result.getValue());
@@ -189,16 +186,15 @@ public class QuantityMeasurementServiceImpl implements IQuantityMeasurementServi
     }
 
     @Override
-    @SuppressWarnings("unchecked")
     public QuantityMeasurementDTO subtract(QuantityDTO q1, QuantityDTO q2) {
         try {
             if (!q1.getMeasurementType().equals(q2.getMeasurementType()))
                 throw new QuantityMeasurementException("subtract Error: Cannot perform arithmetic between different measurement categories: "
                         + q1.getMeasurementType() + " and " + q2.getMeasurementType());
 
-            Quantity qty1 = toQuantity(q1);
-            Quantity qty2 = toQuantity(q2);
-            Quantity result = qty1.subtract(qty2);
+            Quantity<IMeasurable> qty1 = toQuantity(q1);
+            Quantity<IMeasurable> qty2 = toQuantity(q2);
+            Quantity<IMeasurable> result = qty1.subtract(qty2);
 
             QuantityMeasurementEntity entity = buildEntity(q1, q2, "subtract");
             entity.setResultValue(result.getValue());
@@ -221,15 +217,14 @@ public class QuantityMeasurementServiceImpl implements IQuantityMeasurementServi
     }
 
     @Override
-    @SuppressWarnings("unchecked")
     public QuantityMeasurementDTO divide(QuantityDTO q1, QuantityDTO q2) {
         try {
             if (!q1.getMeasurementType().equals(q2.getMeasurementType()))
                 throw new QuantityMeasurementException("divide Error: Cannot perform arithmetic between different measurement categories: "
                         + q1.getMeasurementType() + " and " + q2.getMeasurementType());
 
-            Quantity qty1 = toQuantity(q1);
-            Quantity qty2 = toQuantity(q2);
+            Quantity<IMeasurable> qty1 = toQuantity(q1);
+            Quantity<IMeasurable> qty2 = toQuantity(q2);
             double result = qty1.divide(qty2);
 
             QuantityMeasurementEntity entity = buildEntity(q1, q2, "divide");
