@@ -5,15 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b434ab40-3c3d-4658-9c28-ffa68244e766" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/IMeasurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unit/IMeasurable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/LengthUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unit/LengthUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/Quantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unit/Quantity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/VolumeUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unit/VolumeUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/WeightUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unit/WeightUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.app.quantitymeasurement.controller.QuantityMeasurementControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.app.quantitymeasurement.integrationTests.QuantityMeasurementIntegrationTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.app.quantitymeasurement.repository.QuantityMeasurementDatabaseRepositoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.app.quantitymeasurement.service.QuantityMeasurementServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.app.quantitymeasurement.unit.QuantityTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.app.quantitymeasurement.controller.QuantityMeasurementControllerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.app.quantitymeasurement.integrationTests.QuantityMeasurementIntegrationTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.app.quantitymeasurement.repository.QuantityMeasurementDatabaseRepositoryTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.app.quantitymeasurement.service.QuantityMeasurementServiceTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.app.quantitymeasurement.unit.QuantityTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/app/quantitymeasurement/controller/QuantityMeasurementControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/app/quantitymeasurement/integrationTests/QuantityMeasurementIntegrationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/app/quantitymeasurement/repository/QuantityMeasurementDatabaseRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/app/quantitymeasurement/service/QuantityMeasurementServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/app/quantitymeasurement/unit/QuantityTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logback-test.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

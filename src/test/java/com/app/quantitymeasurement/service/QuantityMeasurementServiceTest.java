@@ -1,155 +1,180 @@
 package com.app.quantitymeasurement.service;
 
-import com.app.quantitymeasurement.entity.QuantityDTO;
-import com.app.quantitymeasurement.entity.QuantityMeasurementEntity;
-import com.app.quantitymeasurement.repository.IQuantityMeasurementRepository;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.TestName;
+import com.app.quantitymeasurement.exception.QuantityMeasurementException;
+import com.app.quantitymeasurement.model.QuantityDTO;
+import com.app.quantitymeasurement.model.QuantityMeasurementDTO;
+import com.app.quantitymeasurement.model.QuantityMeasurementEntity;
+import com.app.quantitymeasurement.repository.QuantityMeasurementRepository;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.junit.Assert.*;
+import static org.assertj.core.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 /**
- * Unit tests for QuantityMeasurementServiceImpl using Mockito to mock the
- * repository.
+ * Unit tests for QuantityMeasurementServiceImpl using Mockito.
+ * Repository is mocked — no Spring context loaded.
  */
-public class QuantityMeasurementServiceTest {
+@ExtendWith(MockitoExtension.class)
+class QuantityMeasurementServiceTest {
 
-    private static final Logger log = LoggerFactory.getLogger(QuantityMeasurementServiceTest.class);
+    @Mock
+    private QuantityMeasurementRepository mockRepo;
 
-    @Rule
-    public TestName testName = new TestName();
-
-    private IQuantityMeasurementRepository mockRepo;
+    @InjectMocks
     private QuantityMeasurementServiceImpl service;
 
-    @Before
-    public void setUp() {
-        log.info("▶  RUNNING : {}", testName.getMethodName());
-        mockRepo = Mockito.mock(IQuantityMeasurementRepository.class);
-        service = new QuantityMeasurementServiceImpl(mockRepo);
-    }
-
-    @After
-    public void tearDown() {
-        log.info("✔  PASSED  : {}", testName.getMethodName());
+    @BeforeEach
+    void setUp() {
+        // Return the entity passed to save() so fromEntity() can read fields
+        Mockito.lenient().when(mockRepo.save(any(QuantityMeasurementEntity.class)))
+                .thenAnswer(invocation -> invocation.getArgument(0));
     }
 
     // ---- Compare ----
 
     @Test
-    public void testCompare_SameType_Equal() {
-        QuantityMeasurementEntity result = service.compare(
-                new QuantityDTO(1.0, QuantityDTO.LengthUnit.FEET),
-                new QuantityDTO(12.0, QuantityDTO.LengthUnit.INCH));
+    void testCompare_EqualQuantities_ReturnsTrueResult() {
+        QuantityDTO q1 = new QuantityDTO(1.0, "FEET", "LengthUnit");
+        QuantityDTO q2 = new QuantityDTO(12.0, "INCH", "LengthUnit");
 
-        assertFalse(result.hasError());
-        assertTrue(result.isComparison());
-        assertTrue(result.getComparisonResult());
-        verify(mockRepo, times(1)).save(any(QuantityMeasurementEntity.class));
+        QuantityMeasurementDTO result = service.compare(q1, q2);
+
+        assertThat(result).isNotNull();
+        assertThat(result.isError()).isFalse();
+        assertThat(result.getResultString()).isEqualTo("true");
+        verify(mockRepo, times(1)).save(any());
     }
 
     @Test
-    public void testCompare_DifferentType_ReturnsError() {
-        QuantityMeasurementEntity result = service.compare(
-                new QuantityDTO(1.0, QuantityDTO.LengthUnit.FEET),
-                new QuantityDTO(1.0, QuantityDTO.WeightUnit.KILOGRAM));
+    void testCompare_NotEqualQuantities_ReturnsFalseResult() {
+        QuantityDTO q1 = new QuantityDTO(1.0, "FEET", "LengthUnit");
+        QuantityDTO q2 = new QuantityDTO(10.0, "INCH", "LengthUnit");
 
-        assertTrue(result.hasError());
-        assertNotNull(result.getErrorMessage());
-        verify(mockRepo, times(1)).save(any(QuantityMeasurementEntity.class));
+        QuantityMeasurementDTO result = service.compare(q1, q2);
+
+        assertThat(result.getResultString()).isEqualTo("false");
+    }
+
+    @Test
+    void testCompare_DifferentTypes_ThrowsException() {
+        QuantityDTO q1 = new QuantityDTO(1.0, "FEET", "LengthUnit");
+        QuantityDTO q2 = new QuantityDTO(1.0, "KILOGRAM", "WeightUnit");
+
+        assertThatThrownBy(() -> service.compare(q1, q2))
+                .isInstanceOf(QuantityMeasurementException.class)
+                .hasMessageContaining("Cannot compare");
+
+        // Error should still be saved
+        verify(mockRepo, times(1)).save(any());
     }
 
     // ---- Convert ----
 
     @Test
-    public void testConvert_FeetToInch() {
-        QuantityMeasurementEntity result = service.convert(
-                new QuantityDTO(1.0, QuantityDTO.LengthUnit.FEET),
-                new QuantityDTO(0.0, QuantityDTO.LengthUnit.INCH));
+    void testConvert_FeetToInch_Returns12() {
+        QuantityDTO source = new QuantityDTO(1.0, "FEET", "LengthUnit");
+        QuantityDTO target = new QuantityDTO(0.0, "INCH", "LengthUnit");
 
-        assertFalse(result.hasError());
-        assertNotNull(result.getResult());
-        assertEquals(12.0, result.getResult().getValue(), 1e-6);
+        QuantityMeasurementDTO result = service.convert(source, target);
+
+        assertThat(result.isError()).isFalse();
+        assertThat(result.getResultValue()).isEqualTo(12.0);
     }
 
     @Test
-    public void testConvert_CelsiusToFahrenheit() {
-        QuantityMeasurementEntity result = service.convert(
-                new QuantityDTO(100.0, QuantityDTO.TemperatureUnit.CELSIUS),
-                new QuantityDTO(0.0, QuantityDTO.TemperatureUnit.FAHRENHEIT));
+    void testConvert_CelsiusToFahrenheit_Returns212() {
+        QuantityDTO source = new QuantityDTO(100.0, "CELSIUS", "TemperatureUnit");
+        QuantityDTO target = new QuantityDTO(0.0, "FAHRENHEIT", "TemperatureUnit");
 
-        assertFalse(result.hasError());
-        assertEquals(212.0, result.getResult().getValue(), 1e-6);
+        QuantityMeasurementDTO result = service.convert(source, target);
+
+        assertThat(result.getResultValue()).isEqualTo(212.0, within(0.001));
+    }
+
+    @Test
+    void testConvert_KilogramToGram_Returns1000() {
+        QuantityDTO source = new QuantityDTO(1.0, "KILOGRAM", "WeightUnit");
+        QuantityDTO target = new QuantityDTO(0.0, "GRAM", "WeightUnit");
+
+        QuantityMeasurementDTO result = service.convert(source, target);
+
+        assertThat(result.getResultValue()).isEqualTo(1000.0, within(0.001));
     }
 
     // ---- Add ----
 
     @Test
-    public void testAdd_SameCategory() {
-        QuantityMeasurementEntity result = service.add(
-                new QuantityDTO(1.0, QuantityDTO.WeightUnit.KILOGRAM),
-                new QuantityDTO(1000.0, QuantityDTO.WeightUnit.GRAM));
+    void testAdd_SameType_ReturnsResult() {
+        QuantityDTO q1 = new QuantityDTO(1.0, "FEET", "LengthUnit");
+        QuantityDTO q2 = new QuantityDTO(12.0, "INCH", "LengthUnit");
 
-        assertFalse(result.hasError());
-        assertNotNull(result.getResult());
+        QuantityMeasurementDTO result = service.add(q1, q2);
+
+        assertThat(result.isError()).isFalse();
+        assertThat(result.getResultValue()).isEqualTo(2.0, within(0.001));
     }
 
     @Test
-    public void testAdd_DifferentCategory_ReturnsError() {
-        QuantityMeasurementEntity result = service.add(
-                new QuantityDTO(1.0, QuantityDTO.LengthUnit.FEET),
-                new QuantityDTO(1.0, QuantityDTO.WeightUnit.KILOGRAM));
+    void testAdd_DifferentTypes_ThrowsException() {
+        QuantityDTO q1 = new QuantityDTO(1.0, "FEET", "LengthUnit");
+        QuantityDTO q2 = new QuantityDTO(1.0, "KILOGRAM", "WeightUnit");
 
-        assertTrue(result.hasError());
+        assertThatThrownBy(() -> service.add(q1, q2))
+                .isInstanceOf(QuantityMeasurementException.class)
+                .hasMessageContaining("Cannot perform arithmetic");
+
+        verify(mockRepo, times(1)).save(any());
     }
 
     // ---- Subtract ----
 
     @Test
-    public void testSubtract_SameCategory() {
-        QuantityMeasurementEntity result = service.subtract(
-                new QuantityDTO(10.0, QuantityDTO.LengthUnit.FEET),
-                new QuantityDTO(5.0, QuantityDTO.LengthUnit.FEET));
+    void testSubtract_SameType_ReturnsResult() {
+        QuantityDTO q1 = new QuantityDTO(10.0, "FEET", "LengthUnit");
+        QuantityDTO q2 = new QuantityDTO(5.0, "FEET", "LengthUnit");
 
-        assertFalse(result.hasError());
+        QuantityMeasurementDTO result = service.subtract(q1, q2);
+
+        assertThat(result.isError()).isFalse();
+        assertThat(result.getResultValue()).isEqualTo(5.0, within(0.001));
     }
 
     // ---- Divide ----
 
     @Test
-    public void testDivide_SameCategory() {
-        QuantityMeasurementEntity result = service.divide(
-                new QuantityDTO(10.0, QuantityDTO.WeightUnit.KILOGRAM),
-                new QuantityDTO(5.0, QuantityDTO.WeightUnit.KILOGRAM));
+    void testDivide_SameType_ReturnsDivisionResult() {
+        QuantityDTO q1 = new QuantityDTO(10.0, "KILOGRAM", "WeightUnit");
+        QuantityDTO q2 = new QuantityDTO(5.0, "KILOGRAM", "WeightUnit");
 
-        assertFalse(result.hasError());
-        assertTrue(result.hasScalarResult());
-        assertEquals(2.0, result.getScalarResult(), 1e-6);
+        QuantityMeasurementDTO result = service.divide(q1, q2);
+
+        assertThat(result.isError()).isFalse();
+        assertThat(result.getResultValue()).isEqualTo(2.0, within(1e-6));
     }
 
     @Test
-    public void testDivide_DifferentCategory_ReturnsError() {
-        QuantityMeasurementEntity result = service.divide(
-                new QuantityDTO(10.0, QuantityDTO.WeightUnit.KILOGRAM),
-                new QuantityDTO(5.0, QuantityDTO.LengthUnit.FEET));
+    void testDivide_DifferentTypes_ThrowsException() {
+        QuantityDTO q1 = new QuantityDTO(10.0, "KILOGRAM", "WeightUnit");
+        QuantityDTO q2 = new QuantityDTO(5.0, "FEET", "LengthUnit");
 
-        assertTrue(result.hasError());
+        assertThatThrownBy(() -> service.divide(q1, q2))
+                .isInstanceOf(QuantityMeasurementException.class);
     }
 
-    // ---- Repository always called ----
+    // ---- Repository is always called ----
 
     @Test
-    public void testRepositoryIsAlwaysCalledOnError() {
-        service.compare(
-                new QuantityDTO(1.0, QuantityDTO.LengthUnit.FEET),
-                new QuantityDTO(1.0, QuantityDTO.WeightUnit.KILOGRAM));
-        verify(mockRepo, times(1)).save(any(QuantityMeasurementEntity.class));
+    void testRepositoryIsAlwaysCalledOnOperation() {
+        QuantityDTO q1 = new QuantityDTO(1.0, "FEET", "LengthUnit");
+        QuantityDTO q2 = new QuantityDTO(12.0, "INCH", "LengthUnit");
+        service.compare(q1, q2);
+        verify(mockRepo, times(1)).save(any());
     }
 }
