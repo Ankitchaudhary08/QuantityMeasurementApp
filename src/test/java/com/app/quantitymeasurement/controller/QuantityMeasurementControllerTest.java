@@ -2,6 +2,7 @@ package com.app.quantitymeasurement.controller;
 
 import com.app.quantitymeasurement.model.QuantityDTO;
 import com.app.quantitymeasurement.model.QuantityMeasurementDTO;
+import com.app.quantitymeasurement.repository.UserRepository;
 import com.app.quantitymeasurement.service.IQuantityMeasurementService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
@@ -27,6 +28,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(QuantityMeasurementController.class)
 @WithMockUser
 class QuantityMeasurementControllerTest {
+
+    @MockBean
+    private UserRepository userRepository; // required by CustomOAuth2UserService in security context
 
     @Autowired
     private MockMvc mockMvc;

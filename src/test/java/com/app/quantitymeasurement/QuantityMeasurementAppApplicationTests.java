@@ -1,6 +1,7 @@
 package com.app.quantitymeasurement;
 
 import com.app.quantitymeasurement.controller.QuantityInputDTO;
+import com.app.quantitymeasurement.config.TestSecurityConfig;
 import com.app.quantitymeasurement.model.QuantityDTO;
 import com.app.quantitymeasurement.model.QuantityMeasurementDTO;
 import com.app.quantitymeasurement.repository.QuantityMeasurementRepository;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
+import org.springframework.context.annotation.Import;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 
@@ -20,8 +22,17 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * QuantityMeasurementAppApplicationTests — Full Spring Boot integration tests.
  * Starts the application on a random port and uses TestRestTemplate for real HTTP calls.
+ * UC18: Uses TestSecurityConfig to bypass Google OAuth2 during tests.
  */
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(
+        webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
+        properties = {
+                // Dummy OAuth2 credentials so Spring autoconfiguration can create
+                // ClientRegistrationRepository without real Google secrets
+                "spring.security.oauth2.client.registration.google.client-id=test-client-id",
+                "spring.security.oauth2.client.registration.google.client-secret=test-client-secret"
+        })
+@Import(TestSecurityConfig.class)
 class QuantityMeasurementAppApplicationTests {
 
     @LocalServerPort
