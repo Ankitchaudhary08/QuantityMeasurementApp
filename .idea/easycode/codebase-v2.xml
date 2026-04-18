@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/src/main/java/Main/controller/QuantityMeasurementController.java;C:/QuantityMeasurementApp/src/main/java/Main/entity/QuantityDTO.java;C:/QuantityMeasurementApp/src/main/java/Main/entity/QuantityMeasurementEntity.java;C:/QuantityMeasurementApp/src/main/java/Main/QuantityMeasurementApp.java;C:/QuantityMeasurementApp/src/main/java/UtilityClasses/IMeasurable.java;C:/QuantityMeasurementApp/src/main/java/UtilityClasses/LengthUnit.java;C:/QuantityMeasurementApp/src/main/java/UtilityClasses/Quantity.java;C:/QuantityMeasurementApp/src/main/java/UtilityClasses/VolumeUnit.java;C:/QuantityMeasurementApp/src/main/java/UtilityClasses/WeightUnit.java;C:/QuantityMeasurementApp/src/test/java/org/example/QuantityTest.java;C:/QuantityMeasurementApp/readme.md" />
+  </component>
+</project>

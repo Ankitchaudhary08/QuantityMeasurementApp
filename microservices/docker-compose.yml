@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  # Database (for local testing instead of H2 if desired)
+  # For now, services default to H2 in-memory
+
+  user-service:
+    build:
+      context: .
+      dockerfile: user-service/Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - JWT_SECRET=dGhpcyBpcyBhIHZlcnkgc2VjdXJlIHNlY3JldCBrZXkgZm9yIHF1YW50aXR5IG1lYXN1cmVtZW50
+
+  measurement-service:
+    build:
+      context: .
+      dockerfile: measurement-service/Dockerfile
+    ports:
+      - "8082:8082"
+
+  history-service:
+    build:
+      context: .
+      dockerfile: history-service/Dockerfile
+    ports:
+      - "8083:8083"
+
+  api-gateway:
+    build:
+      context: .
+      dockerfile: api-gateway/Dockerfile
+    ports:
+      - "8090:8090"
+    environment:
+      - USER_SERVICE_URL=http://user-service:8081
+      - MEASUREMENT_SERVICE_URL=http://measurement-service:8082
+      - HISTORY_SERVICE_URL=http://history-service:8083
+      - JWT_SECRET=dGhpcyBpcyBhIHZlcnkgc2VjdXJlIHNlY3JldCBrZXkgZm9yIHF1YW50aXR5IG1lYXN1cmVtZW50
+      - ALLOWED_ORIGIN_LOCAL=http://localhost:4200
+      - ALLOWED_ORIGIN_S3=http://quantity-measurement-frontend-ankit.s3-website-us-east-1.amazonaws.com
+    depends_on:
+      - user-service
+      - measurement-service
+      - history-service
