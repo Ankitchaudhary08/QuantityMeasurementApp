@@ -53,6 +53,12 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
+        <!-- ===== OAUTH2 CLIENT (Google Authentication - UC18) ===== -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-oauth2-client</artifactId>
+        </dependency>
+
         <!-- ===== ACTUATOR (Health, Metrics) ===== -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
