@@ -1,0 +1,15 @@
+# Ignore Maven target folders
+**/target/
+target/
+
+# Ignore version control
+.git/
+.gitignore
+
+# Ignore IDE settings
+.idea/
+.vscode/
+*.iml
+
+# Ignore logs
+*.log

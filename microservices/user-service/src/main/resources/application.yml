@@ -1,0 +1,71 @@
+# ================================================================
+# User Service — application.yml
+# Port: 8081
+# Responsibilities: Auth, JWT issuance, user profile management
+# ================================================================
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service
+
+  # Database Configuration
+  datasource:
+    url: ${DB_URL:jdbc:h2:mem:userservicedb;DB_CLOSE_DELAY=-1;MODE=MySQL}
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:}
+    driver-class-name: ${DB_DRIVER:org.h2.Driver}
+
+  jpa:
+    database-platform: ${DB_DIALECT:org.hibernate.dialect.H2Dialect}
+    hibernate:
+      ddl-auto: ${DDL_AUTO:update}
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+# ----------------------------------------------------------------
+# JWT Configuration (must match api-gateway secret)
+# ----------------------------------------------------------------
+jwt:
+  secret: ${JWT_SECRET:dGhpcyBpcyBhIHZlcnkgc2VjdXJlIHNlY3JldCBrZXkgZm9yIHF1YW50aXR5IG1lYXN1cmVtZW50}
+  expiration-ms: 86400000   # 24 hours
+
+# ----------------------------------------------------------------
+# SpringDoc / Swagger UI
+# ----------------------------------------------------------------
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+
+# ----------------------------------------------------------------
+# Actuator
+# ----------------------------------------------------------------
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+# ----------------------------------------------------------------
+# Logging
+# ----------------------------------------------------------------
+logging:
+  level:
+    com.app.userservice: DEBUG
+    org.springframework.web: INFO
+    org.hibernate.SQL: DEBUG

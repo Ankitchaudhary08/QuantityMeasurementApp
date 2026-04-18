@@ -1,4 +1,4 @@
-package com.app.quantitymeasurement.model;
+package com.app.userservice.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -7,16 +7,14 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * UserEntity — Stores Google OAuth2 authenticated user details.
- * Created/updated on every successful Google login.
+ * UserEntity — JPA entity for user accounts.
  */
 @Data
 @NoArgsConstructor
 @Entity
 @Table(name = "app_user",
         indexes = {
-                @Index(name = "idx_user_email", columnList = "email", unique = true),
-                @Index(name = "idx_user_google_id", columnList = "googleId", unique = true)
+                @Index(name = "idx_user_email", columnList = "email", unique = true)
         })
 public class UserEntity {
 
@@ -24,23 +22,19 @@ public class UserEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    /** Google subject ID (optional for local users) */
-    @Column(unique = true)
-    private String googleId;
-
     @Column(nullable = false, unique = true)
     private String email;
 
     @Column(nullable = false)
     private String name;
 
-    /** Password for local login (encoded) */
+    /** BCrypt-encoded password */
+    @Column(nullable = false)
     private String password;
 
-    /** Profile picture URL from Google */
+    /** Profile picture URL (optional) */
     private String pictureUrl;
 
-    /** Role assigned to this user */
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private Role role = Role.USER;
